@@ -13,13 +13,13 @@
 
 #unity-canvas {
     height: 100vh;
-    width: 100vh;
+    width: 100vw;
     background: #231F20;
     margin: auto;
 }
 
 .unity-mobile #unity-canvas {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     /* width: 960px;
     height: 1000px; */
