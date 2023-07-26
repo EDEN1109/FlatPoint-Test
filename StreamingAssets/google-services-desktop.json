@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1081566936542",
+    "project_id": "eunhasea-fe4f3",
+    "firebase_url": "https://eunhasea-fe4f3-default-rtdb.asia-southeast1.firebasedatabase.app/",
+    "storage_bucket": "eunhasea-fe4f3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1081566936542:android:3189318e3fa73d386e314f",
+        "android_client_info": {
+          "package_name": "com.Eunha.EunhaFishTycoon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1081566936542-fsp7qksjlvpptsj3te2c3e4f6lekue0l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAB2HM2SM7pHNFaC4T10wzWs4H-aaIKdzg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1081566936542-fsp7qksjlvpptsj3te2c3e4f6lekue0l.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1081566936542-sv1jnqut8io5oig5vbmvp1gauk2102pa.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.Eunha.EunhaFishTycoon"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
