@@ -31,7 +31,7 @@
 #unity-footer { position: relative }
 .unity-mobile #unity-footer { display: none }
 
-#unity-warning { position: absolute; left: 50%; top: 5%; transform: translate(-50%); background: white; padding: 10px; display: none }
+#unity-warning { position: absolute; left: 50%; top: 20%; transform: translate(-50%); background: white; padding: 10px; display: none }
 html {
     -ms-touch-action: none;
 }
