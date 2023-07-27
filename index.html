@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="TemplateData/style.css">
     <!--http://www.html5rocks.com/en/mobile/mobifying/-->
     <meta name="viewport"
-          content="width=device-width,user-scalable=no,initial-scale=1, minimum-scale=1,maximum-scale=1" />
+          content="width=device-width,height=device-height,user-scalable=no,initial-scale=1, minimum-scale=1,maximum-scale=1" />
 
     <!--https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html-->
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -36,9 +36,14 @@
     <!--fix fireball/issues/3568 -->
     <!--<meta name="browsermode" content="application">-->
     <meta name="x5-page-mode" content="app">
+    <meta name="mobile-web-app-capable" content="yes">
     <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="./CryptoJS/rollups/hmac-sha256.js"></script>
+    <script type="text/javascript" src="./CryptoJS/components/enc-base64.js"></script>
     <!--<link rel="apple-touch-icon" href=".png" />-->
     <!--<link rel="apple-touch-icon-precomposed" href=".png" />-->
     <!--<meta name="mobile-web-app-capable" content="yes">-->
@@ -114,9 +119,11 @@
         // the canvas DOM size and WebGL render target sizes yourself.
         // config.matchWebGLToCanvasSize = false;
 
-        console.log(navigator.userAgent);
-        if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+        const MOBILE_MAX_TOUCHPOINTS = 5;
+        if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent) || navigator.maxTouchPoints === MOBILE_MAX_TOUCHPOINTS) {
             // Mobile device style: fill the whole browser client area with the game canvas:
+
+            console.log("Mobile");
 
             var meta = document.createElement('meta');
             meta.name = 'viewport';
