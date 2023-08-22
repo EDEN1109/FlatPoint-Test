@@ -27,7 +27,7 @@
     height: 1000px; */
 }
 #unity-loading-bar { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); display: none }
-#unity-logo { width: 600px; height: 152px; background: url('LOGO.png') no-repeat center }
+#unity-logo { width: 30vw; height: 10vh; background: url('LOGO.png') no-repeat center; background-size: contain; }
 /*#unity-progress-bar-empty { width: 141px; height: 18px; margin-top: 10px; margin-left: 6.5px; background: url('progress-bar-empty-light.png') no-repeat center }
 #unity-progress-bar-full { width: 0%; height: 18px; margin-top: 10px; background: url('progress-bar-full-light.png') no-repeat center }
 #unity-footer { position: relative }
